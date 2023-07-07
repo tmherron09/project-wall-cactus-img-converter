@@ -1,0 +1,28 @@
+{
+  "name": "project-cactus-img-converter",
+  "bin": "index.js",
+  "version": "1.0.0",
+  "description": "Simple Image Conversion with Sharp Library. for Project Wall Catcus Manual Use.",
+  "main": "index.js",
+  "//": {
+    "script-comment": "Requires Global installation of pkg -> See Below"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pkg-win": "pkg ." 
+  },
+  "keywords": [],
+  "author": "Tim Herron",
+  "license": "",
+  "dependencies": {
+    "sharp": "^0.32.1"
+  },
+  "devDependencies": {
+  },
+  "pkg": {
+    "scripts": "build/**/*.js",
+    "targets": [ "latest-win-x64" ],
+    "outputPath": "dist"
+  }
+}
